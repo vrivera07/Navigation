@@ -14,6 +14,8 @@ struct ContentView: View {
             
             VStack{
                 Image("sonny angel")
+                    .aspectRatio(contentMode: .fit)
+                    
             }
             
             Text("This is the root view 🌳")
@@ -21,10 +23,12 @@ struct ContentView: View {
                 Text("Click me!")
                 
             }
-        } //end of VStack
+        } //end of navStack
         .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarHidden(true)
+        
+        
     }
 }
 

@@ -9,10 +9,13 @@ import SwiftUI
 
 struct secondView: View {
     var body: some View {
-        Text("You've arrived to the second view 🥳")
+        
+        VStack{
+            Image("miffy")
+        }
+    Text("You've arrived to the second view 🥳")
     }
-}
-
+   }
 #Preview {
     secondView()
 }
