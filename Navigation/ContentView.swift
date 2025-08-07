@@ -11,11 +11,20 @@ struct ContentView: View {
     var body: some View {
         
         NavigationStack {
-            Text("This is the root view 🌳")
-            NavigationLink(destination: Text("You've arrived to the second view 🥳")) {
-                Text("Click me!")
+            
+            VStack{
+                Image("sonny angel")
             }
-        }
+            
+            Text("This is the root view 🌳")
+            NavigationLink(destination: secondView()) {
+                Text("Click me!")
+                
+            }
+        } //end of VStack
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
     }
 }
 
